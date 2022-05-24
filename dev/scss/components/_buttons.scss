@@ -1,3 +1,28 @@
 /* =============
     Buttons
 ============= */
+button{
+    background-color: $yellow;
+    border-style:none;
+    width: 188px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+footer{
+    button{
+    background-color: $yellow;
+    border-style:none;
+    width: 64px;
+    height: 32px;
+    }
+}
+
+.hero2{
+    button{
+    background-color: $yellow;
+    border-style:none;
+    width: 200px;
+    height: 32px;
+    }
+}

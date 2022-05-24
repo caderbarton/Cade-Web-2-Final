@@ -1,3 +1,61 @@
 /* =============
     Footer
 ============= */
+footer{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "stay need"
+                        "stay find";
+
+                        .stay_in_touch{
+                            background-color: $blue1;
+                            grid-area: stay;
+                            width: auto;
+                            text-align: right;
+                            .content{
+                                padding-right: 10px;
+                            }
+                        
+                        }
+                        .need_help{
+                            background-color: $blue2;
+                            grid-area: need;
+                            width: auto;
+
+                            .content{
+                                padding-left: 10px;
+                            }
+                        }
+                        .find_us{
+                            background-color: $blue3;
+                            grid-area: find;
+                            width: auto;
+
+                            .content{
+                                padding-left: 10px;
+                            }
+                        }
+    .bottom_bar{
+        background-color: $yellow;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "privacy terms access ca";
+
+        .privacy{
+            grid-area: privacy;
+            width: auto;
+        }
+        .access{
+            grid-area: access;
+            width: auto;
+        }
+        .terms{
+            grid-area: terms;
+            width: auto;
+        }
+        .ca{
+            grid-area: ca;
+            width: auto;
+        }
+    }
+}

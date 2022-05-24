@@ -1,0 +1,60 @@
+/* =============
+    Hero1
+============= */
+.hero1{
+    background-image: url("../img/hero.png");
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: "a" "b";
+
+    .content{
+        padding-bottom: 10px;
+        grid-area: a;
+        h1{
+            padding:0px
+        }
+    }
+    .hero1{
+        display: none;
+        width: auto;
+        grid-area: b;
+    }
+
+    .container{
+        background-color: $grey1;
+        text-align: center;
+        
+        .med{
+            display: none;
+        }
+    }
+
+    @include md{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: "a" "b";
+    
+        .content{
+            grid-area: a;
+        }
+        .hero1{
+            grid-area: b;
+        }
+    
+        .container{
+            background-color: $grey1;
+            text-align: center;
+
+            .sm_new{
+                display: none;
+            }
+            .sm_you{
+                display: none;
+            }
+            
+            .med{
+                display: block;
+            }
+        }
+        }
+    }
