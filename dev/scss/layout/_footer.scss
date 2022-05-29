@@ -3,9 +3,10 @@
 ============= */
 footer{
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "stay need"
-                        "stay find";
+                        "stay find"
+                        "bar bar";
 
                         .stay_in_touch{
                             background-color: $blue1;
@@ -34,28 +35,40 @@ footer{
                             .content{
                                 padding-left: 10px;
                             }
-                        }
-    .bottom_bar{
-        background-color: $yellow;
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-areas: "privacy terms access ca";
 
-        .privacy{
-            grid-area: privacy;
-            width: auto;
-        }
-        .access{
-            grid-area: access;
-            width: auto;
-        }
-        .terms{
-            grid-area: terms;
-            width: auto;
-        }
-        .ca{
-            grid-area: ca;
-            width: auto;
-        }
+
+                    }
+                    @include lg{
+                        display:grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-areas: "find stay need"
+                        "bar bar bar"
+                    }
+    .bottom_bar{
+        grid-area: bar;
+        background-color: $yellow;
+        .content{
+            background-color: $yellow;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "privacy terms access ca";
+
+            .privacy{
+                grid-area: privacy;
+                width: auto;
+            }
+            .access{
+                grid-area: access;
+                width: auto;
+            }
+            .terms{
+                grid-area: terms;
+                width: auto;
+            }
+            .ca{
+                grid-area: ca;
+                width: auto;
+            }
     }
+}
 }

@@ -17,27 +17,83 @@
         grid-template-areas: "pic1 pic2 pic3";
 
     .article-container1{
+        display: block;
         background-color: $grey2;
         grid-area: pic1;
         width: fit-content;
     }
     .article-container2{
+        display: block;
         background-color: $grey2;
         grid-area: pic2;
         width: fit-content;
     }
     .article-container3{
+        display: block;
         background-color: $grey2;
         grid-area: pic3;
         width: fit-content;
     }
+
+    .article-container4{
+        display: none;
+        background-color: $grey2;
+        grid-area: pic4;
+        width: fit-content;
+    }
+
+    .article-container5{
+        display: none;
+        background-color: $grey2;
+        grid-area: pic5;
+        width: fit-content;
+    }
     
+    @include md{
+        padding-bottom: 16px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "pic1 pic2 pic3 pic4 pic5";
+
+        .article-container4{
+            display: block;
+            background-color: $grey2;
+            grid-area: pic4;
+            width: fit-content;
+        }
+    
+        .article-container5{
+            display: block;
+            background-color: $grey2;
+            grid-area: pic5;
+            width: fit-content;
+        }
+    }
+    @include lg{
+        padding-left: 136px;
+        padding-right: 136px;
+        padding-bottom: 16px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "pic1 pic2 pic3 pic4 pic5";
 }
+
+@include xl{
+    padding-left: 213px;
+    padding-right: 213px;
+    padding-bottom: 16px;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "pic1 pic2 pic3 pic4 pic5";
+}
+    }
     .dots{
-        padding-bottom: 24px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
+        div{
+            text-align: center;
+            padding-bottom: 36px;
+        }
     }
 }

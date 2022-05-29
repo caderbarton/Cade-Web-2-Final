@@ -24,18 +24,11 @@ body{
         color: white;
 
         @include md{
+            text-align: center;
             color: white;
         font-size: 22px;
         font-weight: 500;
         }
-
-    footer{
-        .type{
-        font-size: 14px;
-        font-weight: 400;
-        color: white;
-        }
-    }
     }
 
     .hero2_text{
@@ -51,3 +44,47 @@ body{
     }
     }
 }
+footer{
+    p{
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+
+    @include md{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    }
+}
+}
+
+.bottom_bar{
+a {
+    outline: none;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+    color: black;
+  }
+}
+
+.need_help{
+    a {
+        outline: none;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 400;
+        color: white;
+
+        @include md{
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            }
+      }
+
+    ul {
+        list-style: none
+    }
+    }
