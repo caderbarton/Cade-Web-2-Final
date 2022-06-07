@@ -88,3 +88,50 @@ a {
         list-style: none
     }
     }
+
+.hero1_shop{
+    p{
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+
+    }
+}
+
+.shop{
+    .shop_header{
+        p{
+            font-size: 48px;
+            font-weight: 500;
+            color: $darkgrey;
+        }
+    }
+
+    .shop_cards{
+        p{
+            font-size: 24px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+}
+
+.blurb{
+    .blurb_text{
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: $darkgrey;
+        }
+    }
+}
+
+.shop_gallery{
+    .shop_gallery_header{
+        p{
+            font-size: 48px;
+            font-weight: 500;
+            color: $darkgrey;
+        }
+    }
+}

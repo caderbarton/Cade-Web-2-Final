@@ -352,6 +352,16 @@ template {
 /* =============
     Base
 ============= */
+.show-menu {
+  display: block !important;
+}
+
+@media (min-width: 992px) {
+  .hide-for-lg {
+    display: none;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -440,6 +450,35 @@ footer p {
   list-style: none;
 }
 
+.hero1_shop p {
+  font-size: 70px;
+  font-weight: 500;
+  color: white;
+}
+
+.shop .shop_header p {
+  font-size: 48px;
+  font-weight: 500;
+  color: #333333;
+}
+.shop .shop_cards p {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+.blurb .blurb_text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.shop_gallery .shop_gallery_header p {
+  font-size: 48px;
+  font-weight: 500;
+  color: #333333;
+}
+
 /* =============
     Buttons
 ============= */
@@ -465,6 +504,14 @@ footer button {
   height: 32px;
 }
 
+.shop_button {
+  padding-left: 16px;
+  text-align: center;
+}
+.shop_button button {
+  width: 396px;
+}
+
 /* =============
     Forms
 ============= */
@@ -486,6 +533,87 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  display: none;
+  background-color: #393d3f;
+  height: 100vh;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+}
+@media (min-width: 992px) {
+  nav {
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+nav aside {
+  display: flex;
+  justify-content: flex-end;
+}
+nav aside button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+nav aside button:hover {
+  cursor: pointer;
+}
+nav ul {
+  height: 100%;
+  padding-top: 20%;
+}
+@media (min-width: 992px) {
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+}
+nav ul li {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  nav ul li {
+    border-left: 1px solid #c6c5b9;
+    margin-bottom: 0;
+    margin-left: 16px;
+    padding-left: 24px;
+  }
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  nav ul li a:link,
+nav ul li a:visited {
+    color: #393d3f;
+  }
+}
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
+  color: #c6c5b9;
+}
+nav ul li:first-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
@@ -494,8 +622,9 @@ header .container {
   width: 100%;
 }
 header .container .content {
-  display: flex;
-  grid-template-columns: 25% 25% 25% 25%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "cat logo cart burger2";
 }
 header .container .content .cat {
   grid-area: cat;
@@ -511,8 +640,26 @@ header .container .content .cart {
   padding-top: 15px;
 }
 header .container .content .burger {
+  display: none;
   grid-area: burger;
   padding-top: 15px;
+}
+header .container .content .burger-container {
+  grid-area: burger2;
+}
+@media (min-width: 992px) {
+  header .container .content .burger-container {
+    display: none;
+  }
+}
+header .container .content .burger-container button {
+  border: none;
+  background-color: transparent;
+  color: #393d3f;
+  font-size: 20px;
+}
+header .container .content .burger-container button:hover {
+  cursor: pointer;
 }
 
 /* =============
@@ -714,7 +861,7 @@ footer .bottom_bar .content .ca {
     gap: 16px;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-areas: "pic8 pic3 pic3" "pic1 pic5 pic7" "pic6 pic5 pic2" "pic4 pic4 pic4";
+    grid-template-areas: "pic7 pic3 pic3" "pic1 pic5 pic8" "pic6 pic5 pic2" "pic4 pic4 pic4";
   }
   .gallery .gallery_images .pic7 {
     display: block;
@@ -836,4 +983,180 @@ footer .bottom_bar .content .ca {
 .journal .dots div {
   text-align: center;
   padding-bottom: 36px;
+}
+
+/* =============
+    Hero1_Shop
+============= */
+.hero1_shop {
+  background-image: url("../img/hero1_shop.png");
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row: "a" "b";
+}
+.hero1_shop .content {
+  padding-bottom: 10px;
+  grid-area: b;
+}
+.hero1_shop .content p {
+  text-align: center;
+}
+.hero1_shop .hero1_shop {
+  display: none;
+  width: auto;
+  grid-area: a;
+}
+.hero1_shop .container {
+  background-color: #50BCD2;
+  text-align: center;
+}
+
+/* =============
+    shop
+============= */
+.shop .shop_header {
+  text-align: center;
+}
+.shop .shop_cards {
+  padding: 16px;
+  padding-bottom: 36px;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "card1 card1" "card2 card3" "card4 card5" "card6 card7" "card8 card9";
+}
+.shop .shop_cards .shop-card1 {
+  grid-area: card1;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card1 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card2 {
+  grid-area: card2;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card2 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card3 {
+  grid-area: card3;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card3 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card4 {
+  grid-area: card4;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card4 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card5 {
+  grid-area: card5;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card5 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card6 {
+  grid-area: card6;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card6 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card7 {
+  grid-area: card7;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card7 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card8 {
+  grid-area: card8;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card8 P {
+  text-align: center;
+}
+.shop .shop_cards .shop-card9 {
+  grid-area: card9;
+  width: 100%;
+  background-color: #FDC430;
+}
+.shop .shop_cards .shop-card9 P {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .shop .shop_cards {
+    padding: 16px;
+    padding-bottom: 36px;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "card1 card1 card2 card3" "card1 card1 card4 card5" "card6 card7 card8 card9";
+  }
+}
+@media (min-width: 992px) {
+  .shop .shop_cards {
+    padding: 16px;
+    padding-bottom: 36px;
+    gap: 121px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "card1 card1 card1 card1" "card2 card3 card4 card5" "card6 card7 card8 card9";
+  }
+}
+
+/* =============
+    blurb
+============= */
+.blurb .blurb_text {
+  padding-left: 16px;
+  text-align: center;
+}
+
+/* =============
+    blurb
+============= */
+.shop_gallery .shop_gallery_header {
+  text-align: center;
+}
+.shop_gallery .shop_gallery_images {
+  padding: 16px;
+  padding-bottom: 36px;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "pic1 pic2" "pic3 pic4" "pic5 pic5";
+}
+.shop_gallery .shop_gallery_images .shirt {
+  grid-area: pic1;
+  width: 100%;
+}
+.shop_gallery .shop_gallery_images .head {
+  grid-area: pic2;
+  width: 100%;
+}
+.shop_gallery .shop_gallery_images .bottles {
+  grid-area: pic3;
+  width: 100%;
+}
+.shop_gallery .shop_gallery_images .socks {
+  grid-area: pic4;
+  width: 100%;
+}
+.shop_gallery .shop_gallery_images .beanie {
+  grid-area: pic5;
+  width: 100%;
 }

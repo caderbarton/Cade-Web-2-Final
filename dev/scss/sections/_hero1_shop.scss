@@ -1,0 +1,28 @@
+/* =============
+    Hero1_Shop
+============= */
+.hero1_shop{
+    background-image: url("../img/hero1_shop.png");
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: "a" "b";
+
+    .content{
+        padding-bottom: 10px;
+        grid-area: b;
+        p{
+            text-align: center;
+        }
+    }
+    .hero1_shop{
+        display: none;
+        width: auto;
+        grid-area: a;
+    }
+
+    .container{
+        background-color: $blue1;
+        text-align: center;
+        
+    }
+}

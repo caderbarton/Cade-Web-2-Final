@@ -1,5 +1,13 @@
 /* =============
     Base
 ============= */
+.show-menu{
+    display: block !important;
+}
 
 
+.hide-for-lg{
+    @include lg{
+        display: none;
+    }
+}

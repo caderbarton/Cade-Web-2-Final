@@ -1,0 +1,40 @@
+/* =============
+    blurb
+============= */
+.shop_gallery{
+    .shop_gallery_header{
+        text-align: center
+    }
+    .shop_gallery_images{
+        padding: 16px;
+        padding-bottom: 36px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "pic1 pic2"
+        "pic3 pic4"
+        "pic5 pic5"
+        ;
+    .shirt{
+        grid-area: pic1;
+        width: 100%;
+    }
+    .head{
+        grid-area: pic2;
+        width: 100%;
+    }
+    .bottles{
+        grid-area: pic3;
+        width: 100%;
+    }
+    .socks{
+        grid-area: pic4;
+        width: 100%;
+    }
+    .beanie{
+        grid-area: pic5;
+        width: 100%;
+    }
+}
+}

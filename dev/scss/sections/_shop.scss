@@ -1,0 +1,119 @@
+/* =============
+    shop
+============= */
+.shop{
+    .shop_header{
+        text-align: center;
+    }
+
+    .shop_cards{
+        padding: 16px;
+        padding-bottom: 36px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "card1 card1"
+        "card2 card3"
+        "card4 card5"
+        "card6 card7"
+        "card8 card9"
+        ;
+
+    .shop-card1{
+        grid-area: card1;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card2{
+        grid-area: card2;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card3{
+        grid-area: card3;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card4{
+        grid-area: card4;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card5{
+        grid-area: card5;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card6{
+        grid-area: card6;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card7{
+        grid-area: card7;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card8{
+        grid-area: card8;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+    .shop-card9{
+        grid-area: card9;
+        width: 100%;
+        background-color: $yellow;
+        P{
+            text-align: center;
+        }
+    }
+        @include md{
+        padding: 16px;
+        padding-bottom: 36px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+        "card1 card1 card2 card3"
+        "card1 card1 card4 card5"
+        "card6 card7 card8 card9"
+        }
+
+        @include lg{
+            padding: 16px;
+            padding-bottom: 36px;
+            gap: 121px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas:
+            "card1 card1 card1 card1"
+            "card2 card3 card4 card5"
+            "card6 card7 card8 card9"
+            }
+    }
+}

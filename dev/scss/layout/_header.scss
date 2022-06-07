@@ -8,8 +8,9 @@ header{
     
 
         .content{
-            display: flex;
-            grid-template-columns: 25% 25% 25% 25%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "cat logo cart burger2";
 
             .cat{
                 grid-area: cat;
@@ -25,8 +26,28 @@ header{
                 padding-top: 15px;
             }
             .burger{
+                display: none;
                 grid-area: burger;
                 padding-top: 15px;
+            }
+
+            .burger-container{
+                grid-area: burger2;
+    
+                @include lg{
+                    display: none;
+                }
+    
+                button{
+                    border: none;
+                    background-color: transparent;
+                    color: $brown;
+                    font-size: 20px;
+    
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
             }
         }
 
