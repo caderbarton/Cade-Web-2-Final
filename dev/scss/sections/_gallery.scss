@@ -20,27 +20,45 @@
         
 
     .pic1{
+        img{
+            width: 100%;
+        }
         grid-area: pic1;
         width: 100%;
     }
     .pic2{
+        img{
+            width: 100%;
+        }
         grid-area: pic2;
         width: 100%;
     }
     .pic3{
+        img{
+            width: 100%;
+        }
         grid-area: pic3;
         width: 100%;
     }
     .pic4{
+        img{
+            width: 100%;
+        }
         grid-area: pic4;
         width: 100%;
     }
     .pic5{
+        img{
+            width: 100%;
+        }
         grid-area: pic5;
         width: 100%;
     }
 
     .pic6{
+        img{
+            width: 100%;
+        }
         grid-area: pic6;
         width: 100%;
     }  
@@ -64,8 +82,8 @@
     }
 
     @include md{
-        padding-left: 117px;
-        padding-right: 117px;
+        margin-left: 117px;
+        margin-right: 117px;
         padding: 16px;
         padding-bottom: 36px;
         gap: 16px;
@@ -79,16 +97,49 @@
         ;
 
         .pic7{
+            img{
+                width: 100%;
+            }
+            grid-area: pic7;
             display: block;
         }
         .pic8{
+            img{
+                width: 100%;
+            }
+            grid-area: pic8;
             display: block;
+        }
+
+        .pic3{
+            img{
+                width: 100%;
+                height: 190px;
+            }
+            grid-area: pic3;
+            width: 100%;
+        }
+        .pic5{
+            img{
+                width: 100%;
+                height: 400px;
+            }
+            grid-area: pic5;
+            width: 100%;
+        }
+        .pic4{
+            img{
+                width: 100%;
+                height: 190px;
+            }
+            grid-area: pic4;
+            width: 100%;
         }
     }
 
     @include lg{
-        padding-left: 117px;
-        padding-right: 117px;
+        margin-left: 105px;
+        margin-right: 105px;
         padding: 16px;
         padding-bottom: 36px;
         gap: 16px;
@@ -102,12 +153,91 @@
         ;
 
         .pic9{
+            img{
+                width: 100%;
+                height: 208px;
+            }
+            grid-area: pic9;
             display: block;
         }
         .pic10{
+            img{
+                width: 100%;
+                height: 271px;
+            }
+            grid-area: pic10;
             display: block;
         }
         .pic11{
+            img{
+                width: 100%;
+                height: 138px;
+            }
+            grid-area: pic11;
+            display: block;
+        }
+        .pic3{
+            img{
+                width: 100%;
+                height: 138px;
+            }
+            grid-area: pic3;
+            width: 100%;
+        }
+        .pic4{
+            img{
+                width: 100%;
+                height: 138px;
+            }
+            grid-area: pic4;
+            width: 100%;
+        }
+        .pic1{
+            img{
+                width: 100%;
+                height: 177px;
+            }
+            grid-area: pic1;
+            width: 100%;
+        }
+        .pic7{
+            img{
+                width: 100%;
+                height: 293px;
+            }
+            grid-area: pic7;
+            display: block;
+        }
+        .pic2{
+            img{
+                width: 100%;
+                height: 138px;
+            }
+            grid-area: pic2;
+            width: 100%;
+        }
+        .pic5{
+            img{
+                width: 100%;
+                height: 344px;
+            }
+            grid-area: pic5;
+            width: 100%;
+        }
+        .pic6{
+            img{
+                width: 100%;
+                height: 191px;
+            }
+            grid-area: pic6;
+            width: 100%;
+        }  
+        .pic8{
+            img{
+                width: 100%;
+                height: 309px;
+            }
+            grid-area: pic8;
             display: block;
         }
     }

@@ -2,6 +2,7 @@
     shop
 ============= */
 .shop{
+    
     .shop_header{
         text-align: center;
     }
@@ -21,6 +22,9 @@
         ;
 
     .shop-card1{
+        img{
+            width: 100%;
+        }
         grid-area: card1;
         width: 100%;
         background-color: $yellow;
@@ -29,6 +33,9 @@
         }
     }
     .shop-card2{
+        img{
+            width: 100%;
+        }
         grid-area: card2;
         width: 100%;
         background-color: $yellow;
@@ -37,6 +44,9 @@
         }
     }
     .shop-card3{
+        img{
+            width: 100%;
+        }
         grid-area: card3;
         width: 100%;
         background-color: $yellow;
@@ -45,6 +55,9 @@
         }
     }
     .shop-card4{
+        img{
+            width: 100%;
+        }
         grid-area: card4;
         width: 100%;
         background-color: $yellow;
@@ -53,6 +66,9 @@
         }
     }
     .shop-card5{
+        img{
+            width: 100%;
+        }
         grid-area: card5;
         width: 100%;
         background-color: $yellow;
@@ -61,6 +77,9 @@
         }
     }
     .shop-card6{
+        img{
+            width: 100%;
+        }
         grid-area: card6;
         width: 100%;
         background-color: $yellow;
@@ -69,6 +88,9 @@
         }
     }
     .shop-card7{
+        img{
+            width: 100%;
+        }
         grid-area: card7;
         width: 100%;
         background-color: $yellow;
@@ -77,6 +99,9 @@
         }
     }
     .shop-card8{
+        img{
+            width: 100%;
+        }
         grid-area: card8;
         width: 100%;
         background-color: $yellow;
@@ -85,6 +110,9 @@
         }
     }
     .shop-card9{
+        img{
+            width: 100%;
+        }
         grid-area: card9;
         width: 100%;
         background-color: $yellow;

@@ -506,6 +506,7 @@ footer button {
 
 .shop_button {
   padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
 }
 .shop_button button {
@@ -545,7 +546,7 @@ nav {
 }
 @media (min-width: 992px) {
   nav {
-    background-color: #fff;
+    background-color: #FDC430;
     display: block;
     height: 100%;
     padding: 0;
@@ -560,7 +561,7 @@ nav aside {
 nav aside button {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #FDC430;
 }
 nav aside button:hover {
   cursor: pointer;
@@ -585,7 +586,7 @@ nav ul li {
 }
 @media (min-width: 992px) {
   nav ul li {
-    border-left: 1px solid #c6c5b9;
+    border-left: 1px solid #FDC430;
     margin-bottom: 0;
     margin-left: 16px;
     padding-left: 24px;
@@ -602,13 +603,13 @@ nav ul li a:visited {
 @media (min-width: 992px) {
   nav ul li a:link,
 nav ul li a:visited {
-    color: #393d3f;
+    color: #000;
   }
 }
 nav ul li a:link:hover, nav ul li a:link:active,
 nav ul li a:visited:hover,
 nav ul li a:visited:active {
-  color: #c6c5b9;
+  color: #FDC430;
 }
 nav ul li:first-child {
   border: none;
@@ -623,7 +624,7 @@ header .container {
 }
 header .container .content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 36px 1fr 1fr 1fr;
   grid-template-areas: "cat logo cart burger2";
 }
 header .container .content .cat {
@@ -655,7 +656,7 @@ header .container .content .burger-container {
 header .container .content .burger-container button {
   border: none;
   background-color: transparent;
-  color: #393d3f;
+  color: black;
   font-size: 20px;
 }
 header .container .content .burger-container button:hover {
@@ -817,24 +818,42 @@ footer .bottom_bar .content .ca {
   grid-area: pic1;
   width: 100%;
 }
+.gallery .gallery_images .pic1 img {
+  width: 100%;
+}
 .gallery .gallery_images .pic2 {
   grid-area: pic2;
+  width: 100%;
+}
+.gallery .gallery_images .pic2 img {
   width: 100%;
 }
 .gallery .gallery_images .pic3 {
   grid-area: pic3;
   width: 100%;
 }
+.gallery .gallery_images .pic3 img {
+  width: 100%;
+}
 .gallery .gallery_images .pic4 {
   grid-area: pic4;
+  width: 100%;
+}
+.gallery .gallery_images .pic4 img {
   width: 100%;
 }
 .gallery .gallery_images .pic5 {
   grid-area: pic5;
   width: 100%;
 }
+.gallery .gallery_images .pic5 img {
+  width: 100%;
+}
 .gallery .gallery_images .pic6 {
   grid-area: pic6;
+  width: 100%;
+}
+.gallery .gallery_images .pic6 img {
   width: 100%;
 }
 .gallery .gallery_images .pic7 {
@@ -854,8 +873,8 @@ footer .bottom_bar .content .ca {
 }
 @media (min-width: 768px) {
   .gallery .gallery_images {
-    padding-left: 117px;
-    padding-right: 117px;
+    margin-left: 117px;
+    margin-right: 117px;
     padding: 16px;
     padding-bottom: 36px;
     gap: 16px;
@@ -864,16 +883,48 @@ footer .bottom_bar .content .ca {
     grid-template-areas: "pic7 pic3 pic3" "pic1 pic5 pic8" "pic6 pic5 pic2" "pic4 pic4 pic4";
   }
   .gallery .gallery_images .pic7 {
+    grid-area: pic7;
     display: block;
   }
+  .gallery .gallery_images .pic7 img {
+    width: 100%;
+  }
   .gallery .gallery_images .pic8 {
+    grid-area: pic8;
     display: block;
+  }
+  .gallery .gallery_images .pic8 img {
+    width: 100%;
+  }
+  .gallery .gallery_images .pic3 {
+    grid-area: pic3;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic3 img {
+    width: 100%;
+    height: 190px;
+  }
+  .gallery .gallery_images .pic5 {
+    grid-area: pic5;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic5 img {
+    width: 100%;
+    height: 400px;
+  }
+  .gallery .gallery_images .pic4 {
+    grid-area: pic4;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic4 img {
+    width: 100%;
+    height: 190px;
   }
 }
 @media (min-width: 992px) {
   .gallery .gallery_images {
-    padding-left: 117px;
-    padding-right: 117px;
+    margin-left: 105px;
+    margin-right: 105px;
     padding: 16px;
     padding-bottom: 36px;
     gap: 16px;
@@ -882,13 +933,92 @@ footer .bottom_bar .content .ca {
     grid-template-areas: "pic9 pic8 pic6 pic6 pic5" "pic10 pic8 pic7 pic2 pic5" "pic10 pic1 pic7 pic4 pic4" "pic11 pic3 pic3 pic3 pic3";
   }
   .gallery .gallery_images .pic9 {
+    grid-area: pic9;
     display: block;
+  }
+  .gallery .gallery_images .pic9 img {
+    width: 100%;
+    height: 208px;
   }
   .gallery .gallery_images .pic10 {
+    grid-area: pic10;
     display: block;
   }
+  .gallery .gallery_images .pic10 img {
+    width: 100%;
+    height: 271px;
+  }
   .gallery .gallery_images .pic11 {
+    grid-area: pic11;
     display: block;
+  }
+  .gallery .gallery_images .pic11 img {
+    width: 100%;
+    height: 138px;
+  }
+  .gallery .gallery_images .pic3 {
+    grid-area: pic3;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic3 img {
+    width: 100%;
+    height: 138px;
+  }
+  .gallery .gallery_images .pic4 {
+    grid-area: pic4;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic4 img {
+    width: 100%;
+    height: 138px;
+  }
+  .gallery .gallery_images .pic1 {
+    grid-area: pic1;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic1 img {
+    width: 100%;
+    height: 177px;
+  }
+  .gallery .gallery_images .pic7 {
+    grid-area: pic7;
+    display: block;
+  }
+  .gallery .gallery_images .pic7 img {
+    width: 100%;
+    height: 293px;
+  }
+  .gallery .gallery_images .pic2 {
+    grid-area: pic2;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic2 img {
+    width: 100%;
+    height: 138px;
+  }
+  .gallery .gallery_images .pic5 {
+    grid-area: pic5;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic5 img {
+    width: 100%;
+    height: 344px;
+  }
+  .gallery .gallery_images .pic6 {
+    grid-area: pic6;
+    width: 100%;
+  }
+  .gallery .gallery_images .pic6 img {
+    width: 100%;
+    height: 191px;
+  }
+  .gallery .gallery_images .pic8 {
+    grid-area: pic8;
+    display: block;
+  }
+  .gallery .gallery_images .pic8 img {
+    width: 100%;
+    height: 309px;
   }
 }
 
@@ -901,6 +1031,7 @@ footer .bottom_bar .content .ca {
   text-align: center;
 }
 .journal .journal_articles {
+  overflow: hidden;
   padding-bottom: 16px;
   gap: 16px;
   display: grid;
@@ -1030,6 +1161,9 @@ footer .bottom_bar .content .ca {
   width: 100%;
   background-color: #FDC430;
 }
+.shop .shop_cards .shop-card1 img {
+  width: 100%;
+}
 .shop .shop_cards .shop-card1 P {
   text-align: center;
 }
@@ -1037,6 +1171,9 @@ footer .bottom_bar .content .ca {
   grid-area: card2;
   width: 100%;
   background-color: #FDC430;
+}
+.shop .shop_cards .shop-card2 img {
+  width: 100%;
 }
 .shop .shop_cards .shop-card2 P {
   text-align: center;
@@ -1046,6 +1183,9 @@ footer .bottom_bar .content .ca {
   width: 100%;
   background-color: #FDC430;
 }
+.shop .shop_cards .shop-card3 img {
+  width: 100%;
+}
 .shop .shop_cards .shop-card3 P {
   text-align: center;
 }
@@ -1053,6 +1193,9 @@ footer .bottom_bar .content .ca {
   grid-area: card4;
   width: 100%;
   background-color: #FDC430;
+}
+.shop .shop_cards .shop-card4 img {
+  width: 100%;
 }
 .shop .shop_cards .shop-card4 P {
   text-align: center;
@@ -1062,6 +1205,9 @@ footer .bottom_bar .content .ca {
   width: 100%;
   background-color: #FDC430;
 }
+.shop .shop_cards .shop-card5 img {
+  width: 100%;
+}
 .shop .shop_cards .shop-card5 P {
   text-align: center;
 }
@@ -1069,6 +1215,9 @@ footer .bottom_bar .content .ca {
   grid-area: card6;
   width: 100%;
   background-color: #FDC430;
+}
+.shop .shop_cards .shop-card6 img {
+  width: 100%;
 }
 .shop .shop_cards .shop-card6 P {
   text-align: center;
@@ -1078,6 +1227,9 @@ footer .bottom_bar .content .ca {
   width: 100%;
   background-color: #FDC430;
 }
+.shop .shop_cards .shop-card7 img {
+  width: 100%;
+}
 .shop .shop_cards .shop-card7 P {
   text-align: center;
 }
@@ -1086,6 +1238,9 @@ footer .bottom_bar .content .ca {
   width: 100%;
   background-color: #FDC430;
 }
+.shop .shop_cards .shop-card8 img {
+  width: 100%;
+}
 .shop .shop_cards .shop-card8 P {
   text-align: center;
 }
@@ -1093,6 +1248,9 @@ footer .bottom_bar .content .ca {
   grid-area: card9;
   width: 100%;
   background-color: #FDC430;
+}
+.shop .shop_cards .shop-card9 img {
+  width: 100%;
 }
 .shop .shop_cards .shop-card9 P {
   text-align: center;
@@ -1121,6 +1279,9 @@ footer .bottom_bar .content .ca {
 /* =============
     blurb
 ============= */
+.blurb {
+  padding-bottom: 116px;
+}
 .blurb .blurb_text {
   padding-left: 16px;
   text-align: center;
@@ -1129,6 +1290,9 @@ footer .bottom_bar .content .ca {
 /* =============
     blurb
 ============= */
+.shop_gallery {
+  padding-bottom: 100px;
+}
 .shop_gallery .shop_gallery_header {
   text-align: center;
 }
@@ -1144,19 +1308,56 @@ footer .bottom_bar .content .ca {
   grid-area: pic1;
   width: 100%;
 }
+.shop_gallery .shop_gallery_images .shirt img {
+  width: 100%;
+}
 .shop_gallery .shop_gallery_images .head {
   grid-area: pic2;
+  width: 100%;
+}
+.shop_gallery .shop_gallery_images .head img {
   width: 100%;
 }
 .shop_gallery .shop_gallery_images .bottles {
   grid-area: pic3;
   width: 100%;
 }
+.shop_gallery .shop_gallery_images .bottles img {
+  width: 100%;
+}
 .shop_gallery .shop_gallery_images .socks {
   grid-area: pic4;
+  width: 100%;
+}
+.shop_gallery .shop_gallery_images .socks img {
   width: 100%;
 }
 .shop_gallery .shop_gallery_images .beanie {
   grid-area: pic5;
   width: 100%;
+}
+.shop_gallery .shop_gallery_images .beanie img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .shop_gallery .shop_gallery_images {
+    padding: 16px;
+    padding-bottom: 36px;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "pic4 pic5 pic5" "pic1 pic2  pic3";
+  }
+}
+@media (min-width: 992px) {
+  .shop_gallery .shop_gallery_images {
+    padding: 16px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 36px;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "pic4 pic5 pic5" "pic1 pic2  pic3";
+  }
 }

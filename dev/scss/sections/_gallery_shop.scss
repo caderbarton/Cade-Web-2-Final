@@ -2,6 +2,7 @@
     blurb
 ============= */
 .shop_gallery{
+    padding-bottom: 100px;
     .shop_gallery_header{
         text-align: center
     }
@@ -17,24 +18,64 @@
         "pic5 pic5"
         ;
     .shirt{
+        img{
+            width: 100%;
+        }
         grid-area: pic1;
         width: 100%;
     }
     .head{
+        img{
+            width: 100%;
+        }
         grid-area: pic2;
         width: 100%;
     }
     .bottles{
+        img{
+            width: 100%;
+        }
         grid-area: pic3;
         width: 100%;
     }
     .socks{
+        img{
+            width: 100%;
+        }
         grid-area: pic4;
         width: 100%;
     }
     .beanie{
+        img{
+            width: 100%;
+        }
         grid-area: pic5;
         width: 100%;
     }
+
+    @include md{
+        padding: 16px;
+        padding-bottom: 36px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        "pic4 pic5 pic5"
+        "pic1 pic2  pic3"
+    }
+
+    @include lg{
+        padding: 16px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 36px;
+        gap: 16px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        "pic4 pic5 pic5"
+        "pic1 pic2  pic3"
+    }
+
 }
 }
